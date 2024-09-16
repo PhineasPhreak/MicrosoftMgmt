@@ -1,0 +1,17 @@
+C:\Users\phine\source\repos\MicrosoftMgmt\bin\Debug\net8.0-windows\MicrosoftMgmt.exe
+C:\Users\phine\source\repos\MicrosoftMgmt\bin\Debug\net8.0-windows\MicrosoftMgmt.deps.json
+C:\Users\phine\source\repos\MicrosoftMgmt\bin\Debug\net8.0-windows\MicrosoftMgmt.runtimeconfig.json
+C:\Users\phine\source\repos\MicrosoftMgmt\bin\Debug\net8.0-windows\MicrosoftMgmt.dll
+C:\Users\phine\source\repos\MicrosoftMgmt\bin\Debug\net8.0-windows\MicrosoftMgmt.pdb
+C:\Users\phine\source\repos\MicrosoftMgmt\obj\Debug\net8.0-windows\MicrosoftMgmt.MainForm.resources
+C:\Users\phine\source\repos\MicrosoftMgmt\obj\Debug\net8.0-windows\MicrosoftMgmt.csproj.GenerateResource.cache
+C:\Users\phine\source\repos\MicrosoftMgmt\obj\Debug\net8.0-windows\MicrosoftMgmt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\phine\source\repos\MicrosoftMgmt\obj\Debug\net8.0-windows\MicrosoftMgmt.AssemblyInfoInputs.cache
+C:\Users\phine\source\repos\MicrosoftMgmt\obj\Debug\net8.0-windows\MicrosoftMgmt.AssemblyInfo.cs
+C:\Users\phine\source\repos\MicrosoftMgmt\obj\Debug\net8.0-windows\MicrosoftMgmt.csproj.CoreCompileInputs.cache
+C:\Users\phine\source\repos\MicrosoftMgmt\obj\Debug\net8.0-windows\MicrosoftMgmt.dll
+C:\Users\phine\source\repos\MicrosoftMgmt\obj\Debug\net8.0-windows\refint\MicrosoftMgmt.dll
+C:\Users\phine\source\repos\MicrosoftMgmt\obj\Debug\net8.0-windows\MicrosoftMgmt.pdb
+C:\Users\phine\source\repos\MicrosoftMgmt\obj\Debug\net8.0-windows\MicrosoftMgmt.genruntimeconfig.cache
+C:\Users\phine\source\repos\MicrosoftMgmt\obj\Debug\net8.0-windows\ref\MicrosoftMgmt.dll
+C:\Users\phine\source\repos\MicrosoftMgmt\obj\Debug\net8.0-windows\MicrosoftMgmt.Properties.Resources.resources
