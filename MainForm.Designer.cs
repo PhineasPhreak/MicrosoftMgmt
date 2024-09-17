@@ -310,6 +310,7 @@
             aProposToolStripMenuItem.Name = "aProposToolStripMenuItem";
             aProposToolStripMenuItem.Size = new Size(241, 26);
             aProposToolStripMenuItem.Text = "A Propos...";
+            aProposToolStripMenuItem.Click += aProposToolStripMenuItem_Click;
             // 
             // MainForm
             // 

@@ -109,5 +109,26 @@ namespace MicrosoftMgmt
         {
             Environment.Exit(0);
         }
+
+        private void aProposToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Docs :
+            // Open Form2 from Form1, close Form1 from Form2
+            // https://stackoverflow.com/questions/2958912/open-form2-from-form1-close-form1-from-form2
+            //
+            // How to set position second form depend on first form?
+            // https://stackoverflow.com/questions/31492787/how-to-set-position-second-form-depend-on-first-form
+
+            About frm_About = new About(this);
+            frm_About.StartPosition = FormStartPosition.CenterParent;
+            frm_About.ShowDialog();
+
+            //frm_About.StartPosition = FormStartPosition.Manual;
+            //frm_About.Load += delegate (object s2, EventArgs e2)
+            //{
+            //    frm_About.Location = new Point(this.Bounds.Location.X + this.Bounds.Width / 2 - frm_About.Width / 2, this.Bounds.Location.Y + this.Bounds.Height / 2 - frm_About.Height / 2);
+            //};
+            //frm_About.Show();
+        }
     }
 }

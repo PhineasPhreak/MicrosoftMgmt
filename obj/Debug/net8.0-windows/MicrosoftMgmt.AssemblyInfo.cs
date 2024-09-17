@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MicrosoftMgmt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7996a9b080ba70886116deed472be4b4eb35240d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MicrosoftMgmt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MicrosoftMgmt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
