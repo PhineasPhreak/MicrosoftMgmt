@@ -115,11 +115,13 @@
             afficherLaideToolStripMenuItem = new ToolStripMenuItem();
             toolStripSeparator1 = new ToolStripSeparator();
             aProposToolStripMenuItem = new ToolStripMenuItem();
+            groupBox_WindowsServer = new GroupBox();
             statusStrip_Info.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage_Windows.SuspendLayout();
             groupBox_Windows.SuspendLayout();
             tableLayoutPanel_Windows.SuspendLayout();
+            tabPage_WindowsServer.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -912,6 +914,7 @@
             // 
             // tabPage_WindowsServer
             // 
+            tabPage_WindowsServer.Controls.Add(groupBox_WindowsServer);
             tabPage_WindowsServer.Location = new Point(4, 29);
             tabPage_WindowsServer.Name = "tabPage_WindowsServer";
             tabPage_WindowsServer.Padding = new Padding(3);
@@ -1014,6 +1017,16 @@
             aProposToolStripMenuItem.Text = "A Propos...";
             aProposToolStripMenuItem.Click += aProposToolStripMenuItem_Click;
             // 
+            // groupBox_WindowsServer
+            // 
+            groupBox_WindowsServer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox_WindowsServer.Location = new Point(8, 6);
+            groupBox_WindowsServer.Name = "groupBox_WindowsServer";
+            groupBox_WindowsServer.Size = new Size(908, 704);
+            groupBox_WindowsServer.TabIndex = 0;
+            groupBox_WindowsServer.TabStop = false;
+            groupBox_WindowsServer.Text = "List of All MSC Files in Servers";
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1033,6 +1046,7 @@
             groupBox_Windows.ResumeLayout(false);
             tableLayoutPanel_Windows.ResumeLayout(false);
             tableLayoutPanel_Windows.PerformLayout();
+            tabPage_WindowsServer.ResumeLayout(false);
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -1127,5 +1141,6 @@
         private LinkLabel linkLabel1_wmimgmt;
         private Label label41;
         private Label label42;
+        private GroupBox groupBox_WindowsServer;
     }
 }
