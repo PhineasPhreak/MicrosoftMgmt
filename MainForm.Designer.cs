@@ -158,7 +158,7 @@
             tabPage_Windows.Padding = new Padding(3);
             tabPage_Windows.Size = new Size(924, 716);
             tabPage_Windows.TabIndex = 0;
-            tabPage_Windows.Text = "Windows 10/11";
+            tabPage_Windows.Text = "Windows 11";
             tabPage_Windows.UseVisualStyleBackColor = true;
             // 
             // groupBox_Windows
