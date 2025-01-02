@@ -102,6 +102,10 @@
             label41 = new Label();
             label42 = new Label();
             tabPage_WindowsServer = new TabPage();
+            groupBox_WindowsServer = new GroupBox();
+            tableLayoutPanel_WindowsServer = new TableLayoutPanel();
+            label43 = new Label();
+            label44 = new Label();
             menuStrip1 = new MenuStrip();
             fichierToolStripMenuItem = new ToolStripMenuItem();
             consoleWindowsToolStripMenuItem = new ToolStripMenuItem();
@@ -115,13 +119,14 @@
             afficherLaideToolStripMenuItem = new ToolStripMenuItem();
             toolStripSeparator1 = new ToolStripSeparator();
             aProposToolStripMenuItem = new ToolStripMenuItem();
-            groupBox_WindowsServer = new GroupBox();
             statusStrip_Info.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage_Windows.SuspendLayout();
             groupBox_Windows.SuspendLayout();
             tableLayoutPanel_Windows.SuspendLayout();
             tabPage_WindowsServer.SuspendLayout();
+            groupBox_WindowsServer.SuspendLayout();
+            tableLayoutPanel_WindowsServer.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -129,9 +134,9 @@
             // 
             statusStrip_Info.ImageScalingSize = new Size(20, 20);
             statusStrip_Info.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
-            statusStrip_Info.Location = new Point(0, 777);
+            statusStrip_Info.Location = new Point(0, 927);
             statusStrip_Info.Name = "statusStrip_Info";
-            statusStrip_Info.Size = new Size(932, 26);
+            statusStrip_Info.Size = new Size(1232, 26);
             statusStrip_Info.TabIndex = 0;
             statusStrip_Info.Text = "statusStrip1";
             // 
@@ -149,7 +154,7 @@
             tabControl1.Location = new Point(0, 28);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(932, 749);
+            tabControl1.Size = new Size(1232, 899);
             tabControl1.TabIndex = 1;
             // 
             // tabPage_Windows
@@ -158,7 +163,7 @@
             tabPage_Windows.Location = new Point(4, 29);
             tabPage_Windows.Name = "tabPage_Windows";
             tabPage_Windows.Padding = new Padding(3);
-            tabPage_Windows.Size = new Size(924, 716);
+            tabPage_Windows.Size = new Size(1224, 866);
             tabPage_Windows.TabIndex = 0;
             tabPage_Windows.Text = "Windows 11";
             tabPage_Windows.UseVisualStyleBackColor = true;
@@ -169,7 +174,7 @@
             groupBox_Windows.Controls.Add(tableLayoutPanel_Windows);
             groupBox_Windows.Location = new Point(8, 6);
             groupBox_Windows.Name = "groupBox_Windows";
-            groupBox_Windows.Size = new Size(908, 707);
+            groupBox_Windows.Size = new Size(1208, 857);
             groupBox_Windows.TabIndex = 1;
             groupBox_Windows.TabStop = false;
             groupBox_Windows.Text = "List of All MSC Files in Windows";
@@ -273,33 +278,36 @@
             tableLayoutPanel_Windows.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel_Windows.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel_Windows.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel_Windows.Size = new Size(902, 681);
+            tableLayoutPanel_Windows.Size = new Size(1202, 831);
             tableLayoutPanel_Windows.TabIndex = 0;
             // 
             // label_MSCFile
             // 
             label_MSCFile.AutoSize = true;
+            label_MSCFile.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_MSCFile.Location = new Point(3, 0);
             label_MSCFile.Name = "label_MSCFile";
-            label_MSCFile.Size = new Size(66, 20);
+            label_MSCFile.Size = new Size(68, 20);
             label_MSCFile.TabIndex = 0;
             label_MSCFile.Text = "MSC File";
             // 
             // label_ConsoleName
             // 
             label_ConsoleName.AutoSize = true;
-            label_ConsoleName.Location = new Point(238, 0);
+            label_ConsoleName.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_ConsoleName.Location = new Point(316, 0);
             label_ConsoleName.Name = "label_ConsoleName";
-            label_ConsoleName.Size = new Size(106, 20);
+            label_ConsoleName.Size = new Size(110, 20);
             label_ConsoleName.TabIndex = 1;
             label_ConsoleName.Text = "Console Name";
             // 
             // label_Details
             // 
             label_Details.AutoSize = true;
-            label_Details.Location = new Point(527, 0);
+            label_Details.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_Details.Location = new Point(701, 0);
             label_Details.Name = "label_Details";
-            label_Details.Size = new Size(55, 20);
+            label_Details.Size = new Size(57, 20);
             label_Details.TabIndex = 2;
             label_Details.Text = "Details";
             // 
@@ -317,7 +325,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(238, 20);
+            label1.Location = new Point(316, 20);
             label1.Name = "label1";
             label1.Size = new Size(162, 20);
             label1.TabIndex = 4;
@@ -326,7 +334,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(527, 20);
+            label2.Location = new Point(701, 20);
             label2.Name = "label2";
             label2.Size = new Size(202, 20);
             label2.TabIndex = 5;
@@ -346,7 +354,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(238, 40);
+            label3.Location = new Point(316, 40);
             label3.Name = "label3";
             label3.Size = new Size(192, 20);
             label3.TabIndex = 7;
@@ -355,7 +363,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(527, 40);
+            label4.Location = new Point(701, 40);
             label4.Name = "label4";
             label4.Size = new Size(337, 20);
             label4.TabIndex = 8;
@@ -375,7 +383,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(238, 60);
+            label5.Location = new Point(316, 60);
             label5.Name = "label5";
             label5.Size = new Size(83, 20);
             label5.TabIndex = 10;
@@ -384,7 +392,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(527, 60);
+            label6.Location = new Point(701, 60);
             label6.Name = "label6";
             label6.Size = new Size(264, 20);
             label6.TabIndex = 11;
@@ -404,7 +412,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(238, 80);
+            label7.Location = new Point(316, 80);
             label7.Name = "label7";
             label7.Size = new Size(144, 20);
             label7.TabIndex = 13;
@@ -413,7 +421,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(527, 80);
+            label8.Location = new Point(701, 80);
             label8.Name = "label8";
             label8.Size = new Size(368, 20);
             label8.TabIndex = 14;
@@ -433,7 +441,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(238, 100);
+            label9.Location = new Point(316, 100);
             label9.Name = "label9";
             label9.Size = new Size(167, 20);
             label9.TabIndex = 16;
@@ -442,9 +450,9 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(527, 100);
+            label10.Location = new Point(701, 100);
             label10.Name = "label10";
-            label10.Size = new Size(362, 20);
+            label10.Size = new Size(497, 20);
             label10.TabIndex = 17;
             label10.Text = resources.GetString("label10.Text");
             // 
@@ -462,7 +470,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(238, 120);
+            label11.Location = new Point(316, 120);
             label11.Name = "label11";
             label11.Size = new Size(117, 20);
             label11.TabIndex = 19;
@@ -471,9 +479,9 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(527, 120);
+            label12.Location = new Point(701, 120);
             label12.Name = "label12";
-            label12.Size = new Size(363, 20);
+            label12.Size = new Size(412, 20);
             label12.TabIndex = 20;
             label12.Text = "Opens the Device Manager to manage hardware and devices";
             // 
@@ -491,7 +499,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(238, 140);
+            label13.Location = new Point(316, 140);
             label13.Name = "label13";
             label13.Size = new Size(27, 20);
             label13.TabIndex = 22;
@@ -500,9 +508,9 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(527, 140);
+            label14.Location = new Point(701, 140);
             label14.Name = "label14";
-            label14.Size = new Size(359, 20);
+            label14.Size = new Size(410, 20);
             label14.TabIndex = 23;
             label14.Text = "To manage the Start Menu, Taskbar, and Notification settings";
             // 
@@ -520,7 +528,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(238, 160);
+            label15.Location = new Point(316, 160);
             label15.Name = "label15";
             label15.Size = new Size(129, 20);
             label15.TabIndex = 25;
@@ -529,9 +537,9 @@
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(527, 160);
+            label16.Location = new Point(701, 160);
             label16.Name = "label16";
-            label16.Size = new Size(357, 20);
+            label16.Size = new Size(460, 20);
             label16.TabIndex = 26;
             label16.Text = "Opens Disk Management to administrate connected storage devices";
             // 
@@ -549,7 +557,7 @@
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(238, 180);
+            label17.Location = new Point(316, 180);
             label17.Name = "label17";
             label17.Size = new Size(94, 20);
             label17.TabIndex = 28;
@@ -558,9 +566,9 @@
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(527, 180);
+            label18.Location = new Point(701, 180);
             label18.Name = "label18";
-            label18.Size = new Size(362, 20);
+            label18.Size = new Size(478, 20);
             label18.TabIndex = 29;
             label18.Text = "Opens the Event Viewer which displays the operating system, software, and hardware events";
             // 
@@ -578,7 +586,7 @@
             // label19
             // 
             label19.AutoSize = true;
-            label19.Location = new Point(238, 200);
+            label19.Location = new Point(316, 200);
             label19.Name = "label19";
             label19.Size = new Size(107, 20);
             label19.TabIndex = 31;
@@ -587,9 +595,9 @@
             // label20
             // 
             label20.AutoSize = true;
-            label20.Location = new Point(527, 200);
+            label20.Location = new Point(701, 200);
             label20.Name = "label20";
-            label20.Size = new Size(346, 20);
+            label20.Size = new Size(373, 20);
             label20.TabIndex = 32;
             label20.Text = "Loads the list of shared folders, sessions, and open files";
             // 
@@ -607,7 +615,7 @@
             // label21
             // 
             label21.AutoSize = true;
-            label21.Location = new Point(238, 220);
+            label21.Location = new Point(316, 220);
             label21.Name = "label21";
             label21.Size = new Size(136, 20);
             label21.TabIndex = 34;
@@ -616,7 +624,7 @@
             // label22
             // 
             label22.AutoSize = true;
-            label22.Location = new Point(527, 220);
+            label22.Location = new Point(701, 220);
             label22.Name = "label22";
             label22.Size = new Size(359, 20);
             label22.TabIndex = 35;
@@ -636,7 +644,7 @@
             // label23
             // 
             label23.AutoSize = true;
-            label23.Location = new Point(238, 240);
+            label23.Location = new Point(316, 240);
             label23.Name = "label23";
             label23.Size = new Size(163, 20);
             label23.TabIndex = 37;
@@ -645,7 +653,7 @@
             // label24
             // 
             label24.AutoSize = true;
-            label24.Location = new Point(527, 240);
+            label24.Location = new Point(701, 240);
             label24.Name = "label24";
             label24.Size = new Size(326, 20);
             label24.TabIndex = 38;
@@ -665,7 +673,7 @@
             // label25
             // 
             label25.AutoSize = true;
-            label25.Location = new Point(238, 260);
+            label25.Location = new Point(316, 260);
             label25.Name = "label25";
             label25.Size = new Size(149, 20);
             label25.TabIndex = 40;
@@ -674,7 +682,7 @@
             // label26
             // 
             label26.AutoSize = true;
-            label26.Location = new Point(527, 260);
+            label26.Location = new Point(701, 260);
             label26.Name = "label26";
             label26.Size = new Size(257, 20);
             label26.TabIndex = 41;
@@ -694,7 +702,7 @@
             // label27
             // 
             label27.AutoSize = true;
-            label27.Location = new Point(238, 280);
+            label27.Location = new Point(316, 280);
             label27.Name = "label27";
             label27.Size = new Size(131, 20);
             label27.TabIndex = 43;
@@ -703,7 +711,7 @@
             // label28
             // 
             label28.AutoSize = true;
-            label28.Location = new Point(527, 280);
+            label28.Location = new Point(701, 280);
             label28.Name = "label28";
             label28.Size = new Size(117, 20);
             label28.TabIndex = 44;
@@ -723,7 +731,7 @@
             // label29
             // 
             label29.AutoSize = true;
-            label29.Location = new Point(238, 300);
+            label29.Location = new Point(316, 300);
             label29.Name = "label29";
             label29.Size = new Size(166, 20);
             label29.TabIndex = 46;
@@ -732,9 +740,9 @@
             // label30
             // 
             label30.AutoSize = true;
-            label30.Location = new Point(527, 300);
+            label30.Location = new Point(701, 300);
             label30.Name = "label30";
-            label30.Size = new Size(316, 20);
+            label30.Size = new Size(448, 20);
             label30.TabIndex = 47;
             label30.Text = "List policies, full results only available through command-line tool gpresult";
             // 
@@ -752,7 +760,7 @@
             // label31
             // 
             label31.AutoSize = true;
-            label31.Location = new Point(238, 320);
+            label31.Location = new Point(316, 320);
             label31.Name = "label31";
             label31.Size = new Size(142, 20);
             label31.TabIndex = 49;
@@ -761,9 +769,9 @@
             // label32
             // 
             label32.AutoSize = true;
-            label32.Location = new Point(527, 320);
+            label32.Location = new Point(701, 320);
             label32.Name = "label32";
-            label32.Size = new Size(343, 20);
+            label32.Size = new Size(487, 20);
             label32.TabIndex = 50;
             label32.Text = "Loads policies such as account policies, public key policies, or advanced audit policy configuration";
             // 
@@ -781,7 +789,7 @@
             // label33
             // 
             label33.AutoSize = true;
-            label33.Location = new Point(238, 340);
+            label33.Location = new Point(316, 340);
             label33.Name = "label33";
             label33.Size = new Size(125, 20);
             label33.TabIndex = 52;
@@ -790,7 +798,7 @@
             // label34
             // 
             label34.AutoSize = true;
-            label34.Location = new Point(527, 340);
+            label34.Location = new Point(701, 340);
             label34.Name = "label34";
             label34.Size = new Size(346, 20);
             label34.TabIndex = 53;
@@ -810,7 +818,7 @@
             // label35
             // 
             label35.AutoSize = true;
-            label35.Location = new Point(238, 360);
+            label35.Location = new Point(316, 360);
             label35.Name = "label35";
             label35.Size = new Size(105, 20);
             label35.TabIndex = 55;
@@ -819,7 +827,7 @@
             // label36
             // 
             label36.AutoSize = true;
-            label36.Location = new Point(527, 360);
+            label36.Location = new Point(701, 360);
             label36.Name = "label36";
             label36.Size = new Size(285, 20);
             label36.TabIndex = 56;
@@ -839,7 +847,7 @@
             // label37
             // 
             label37.AutoSize = true;
-            label37.Location = new Point(238, 380);
+            label37.Location = new Point(316, 380);
             label37.Name = "label37";
             label37.Size = new Size(265, 20);
             label37.TabIndex = 58;
@@ -848,7 +856,7 @@
             // label38
             // 
             label38.AutoSize = true;
-            label38.Location = new Point(527, 380);
+            label38.Location = new Point(701, 380);
             label38.Name = "label38";
             label38.Size = new Size(253, 20);
             label38.TabIndex = 59;
@@ -868,7 +876,7 @@
             // label39
             // 
             label39.AutoSize = true;
-            label39.Location = new Point(238, 400);
+            label39.Location = new Point(316, 400);
             label39.Name = "label39";
             label39.Size = new Size(125, 20);
             label39.TabIndex = 61;
@@ -877,7 +885,7 @@
             // label40
             // 
             label40.AutoSize = true;
-            label40.Location = new Point(527, 400);
+            label40.Location = new Point(701, 400);
             label40.Name = "label40";
             label40.Size = new Size(324, 20);
             label40.TabIndex = 62;
@@ -897,7 +905,7 @@
             // label41
             // 
             label41.AutoSize = true;
-            label41.Location = new Point(238, 420);
+            label41.Location = new Point(316, 420);
             label41.Name = "label41";
             label41.Size = new Size(132, 20);
             label41.TabIndex = 64;
@@ -906,9 +914,9 @@
             // label42
             // 
             label42.AutoSize = true;
-            label42.Location = new Point(527, 420);
+            label42.Location = new Point(701, 420);
             label42.Name = "label42";
-            label42.Size = new Size(342, 20);
+            label42.Size = new Size(497, 20);
             label42.TabIndex = 65;
             label42.Text = "Configure and Control the Windows Management Instrumentation Service";
             // 
@@ -918,10 +926,85 @@
             tabPage_WindowsServer.Location = new Point(4, 29);
             tabPage_WindowsServer.Name = "tabPage_WindowsServer";
             tabPage_WindowsServer.Padding = new Padding(3);
-            tabPage_WindowsServer.Size = new Size(924, 716);
+            tabPage_WindowsServer.Size = new Size(1224, 866);
             tabPage_WindowsServer.TabIndex = 1;
             tabPage_WindowsServer.Text = "Windows Server 2016/2019/2022";
             tabPage_WindowsServer.UseVisualStyleBackColor = true;
+            // 
+            // groupBox_WindowsServer
+            // 
+            groupBox_WindowsServer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox_WindowsServer.Controls.Add(tableLayoutPanel_WindowsServer);
+            groupBox_WindowsServer.Location = new Point(8, 6);
+            groupBox_WindowsServer.Name = "groupBox_WindowsServer";
+            groupBox_WindowsServer.Size = new Size(1208, 854);
+            groupBox_WindowsServer.TabIndex = 0;
+            groupBox_WindowsServer.TabStop = false;
+            groupBox_WindowsServer.Text = "List of All MSC Files in Servers";
+            // 
+            // tableLayoutPanel_WindowsServer
+            // 
+            tableLayoutPanel_WindowsServer.ColumnCount = 2;
+            tableLayoutPanel_WindowsServer.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 32.7957F));
+            tableLayoutPanel_WindowsServer.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 67.2043F));
+            tableLayoutPanel_WindowsServer.Controls.Add(label43, 0, 0);
+            tableLayoutPanel_WindowsServer.Controls.Add(label44, 1, 0);
+            tableLayoutPanel_WindowsServer.Dock = DockStyle.Fill;
+            tableLayoutPanel_WindowsServer.Location = new Point(3, 23);
+            tableLayoutPanel_WindowsServer.Name = "tableLayoutPanel_WindowsServer";
+            tableLayoutPanel_WindowsServer.RowCount = 30;
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel_WindowsServer.Size = new Size(1202, 828);
+            tableLayoutPanel_WindowsServer.TabIndex = 0;
+            // 
+            // label43
+            // 
+            label43.AutoSize = true;
+            label43.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label43.Location = new Point(3, 0);
+            label43.Name = "label43";
+            label43.Size = new Size(68, 20);
+            label43.TabIndex = 0;
+            label43.Text = "MSC File";
+            // 
+            // label44
+            // 
+            label44.AutoSize = true;
+            label44.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label44.Location = new Point(397, 0);
+            label44.Name = "label44";
+            label44.Size = new Size(110, 20);
+            label44.TabIndex = 1;
+            label44.Text = "Console Name";
             // 
             // menuStrip1
             // 
@@ -929,7 +1012,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { fichierToolStripMenuItem, editionToolStripMenuItem, outilsToolStripMenuItem, aideToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(932, 28);
+            menuStrip1.Size = new Size(1232, 28);
             menuStrip1.TabIndex = 2;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -1017,21 +1100,11 @@
             aProposToolStripMenuItem.Text = "A Propos...";
             aProposToolStripMenuItem.Click += aProposToolStripMenuItem_Click;
             // 
-            // groupBox_WindowsServer
-            // 
-            groupBox_WindowsServer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox_WindowsServer.Location = new Point(8, 6);
-            groupBox_WindowsServer.Name = "groupBox_WindowsServer";
-            groupBox_WindowsServer.Size = new Size(908, 704);
-            groupBox_WindowsServer.TabIndex = 0;
-            groupBox_WindowsServer.TabStop = false;
-            groupBox_WindowsServer.Text = "List of All MSC Files in Servers";
-            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(932, 803);
+            ClientSize = new Size(1232, 953);
             Controls.Add(tabControl1);
             Controls.Add(statusStrip_Info);
             Controls.Add(menuStrip1);
@@ -1047,6 +1120,9 @@
             tableLayoutPanel_Windows.ResumeLayout(false);
             tableLayoutPanel_Windows.PerformLayout();
             tabPage_WindowsServer.ResumeLayout(false);
+            groupBox_WindowsServer.ResumeLayout(false);
+            tableLayoutPanel_WindowsServer.ResumeLayout(false);
+            tableLayoutPanel_WindowsServer.PerformLayout();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -1142,5 +1218,8 @@
         private Label label41;
         private Label label42;
         private GroupBox groupBox_WindowsServer;
+        private TableLayoutPanel tableLayoutPanel_WindowsServer;
+        private Label label43;
+        private Label label44;
     }
 }
