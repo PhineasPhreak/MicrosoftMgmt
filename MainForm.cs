@@ -83,12 +83,95 @@ namespace MicrosoftMgmt
             //Calling the Start Method of Process class to
             // Invoke our Process viz 'cmd.exe'
             processStart.Start();
-            processStart.WaitForExit();
+            processStart.Close();
+
+            // One instance
+            //processStart.WaitForExit();
         }
 
         private void linkLabel_azman_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process_MSC("azman.msc");
+        }
+        private void linkLabel1_certlm_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("certlm.msc");
+        }
+        private void linkLabel1_certmgr_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("certmgr.msc");
+        }
+        private void linkLabel1_comexp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("comexp.msc");
+        }
+        private void linkLabel1_compmgmt_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("compmgmt.msc");
+        }
+        private void linkLabel1_devmgmt_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("devmgmt.msc");
+        }
+        private void linkLabel1_devmoderunasuserconfig_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("devmoderunasuserconfig.msc");
+        }
+        private void linkLabel1_diskmgmt_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("diskmgmt.msc");
+        }
+        private void linkLabel1_eventvwr_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("eventvwr.msc");
+        }
+        private void linkLabel1_fsmgmt_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("fsmgmt.msc");
+        }
+        private void linkLabel1_gpedit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("gpedit.msc");
+        }
+        private void linkLabel1_lusrmgr_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("lusrmgr.msc");
+        }
+        private void linkLabel1_printmanagement_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("printmanagement.msc");
+        }
+        private void linkLabel1_perfmon_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("perfmon.msc");
+        }
+        private void linkLabel1_rsop_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("rsop.msc");
+        }
+        private void linkLabel1_secpol_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("secpol.msc");
+        }
+        private void linkLabel1_services_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("services.msc");
+        }
+        private void linkLabel1_taskschd_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("taskschd.msc");
+        }
+        private void linkLabel1_tpm_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("tpm.msc");
+        }
+        private void linkLabel1_wf_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("wf.msc");
+        }
+        private void linkLabel1_wmimgmt_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process_MSC("wmimgmt.msc");
         }
 
         //
@@ -130,5 +213,7 @@ namespace MicrosoftMgmt
             //};
             //frm_About.Show();
         }
+
     }
+
 }
