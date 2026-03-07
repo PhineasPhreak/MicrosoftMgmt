@@ -37,9 +37,10 @@
             // button_OK
             // 
             button_OK.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button_OK.Location = new Point(676, 412);
+            button_OK.Location = new Point(590, 307);
+            button_OK.Margin = new Padding(3, 2, 3, 2);
             button_OK.Name = "button_OK";
-            button_OK.Size = new Size(94, 29);
+            button_OK.Size = new Size(82, 22);
             button_OK.TabIndex = 0;
             button_OK.Text = "OK";
             button_OK.UseVisualStyleBackColor = true;
@@ -48,7 +49,8 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.info_icon_48;
-            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Location = new Point(12, 11);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(48, 48);
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -58,22 +60,25 @@
             // groupBox_MoreInfo
             // 
             groupBox_MoreInfo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox_MoreInfo.Location = new Point(66, 12);
+            groupBox_MoreInfo.Location = new Point(66, 11);
+            groupBox_MoreInfo.Margin = new Padding(3, 2, 3, 2);
             groupBox_MoreInfo.Name = "groupBox_MoreInfo";
-            groupBox_MoreInfo.Size = new Size(704, 202);
+            groupBox_MoreInfo.Padding = new Padding(3, 2, 3, 2);
+            groupBox_MoreInfo.Size = new Size(608, 152);
             groupBox_MoreInfo.TabIndex = 0;
             groupBox_MoreInfo.TabStop = false;
             groupBox_MoreInfo.Text = "Informations Additionnel";
             // 
             // About
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(782, 453);
+            ClientSize = new Size(684, 340);
             Controls.Add(groupBox_MoreInfo);
             Controls.Add(pictureBox1);
             Controls.Add(button_OK);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "About";
